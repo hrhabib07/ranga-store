@@ -26,24 +26,10 @@ const showProducts = (products) => {
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-       <button id="details-btn" onclick="showDetails()" class="btn btn-danger">Details</button></div>
+       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
-  // get details after clicking on details button
-  const showDetails = () =>{
-    const parent = document.getElementById('show-details');
-    const div = document.createElement('div');
-    div.innerHTML = `
-    <div class="card" style="width: 18rem;">
-  <img src="${image}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">${details}</p>
-  </div>
-</div>
-    `;
-    parent.appendChild(div);
-  } 
 };
 
 let count = 0;
