@@ -1,6 +1,12 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
 }
 
 .search-field {
@@ -48,6 +54,7 @@ body {
 }
 
 .single-product:hover {
+  background-color: rgba(241, 237, 231, 0.76);
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
   border: 1px solid rgba(38, 0, 255, 0.445);
