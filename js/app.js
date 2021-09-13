@@ -1,6 +1,6 @@
 const loadProducts = () => {
-  // const url = `https://fakestoreapi.com/products`;
-  const url = `http://127.0.0.1:5500/db.json`;
+  const url = `https://fakestoreapi.com/products`;
+  // const url = `http://127.0.0.1:5500/db.json`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => showProducts(data));
@@ -13,8 +13,6 @@ const showProducts = (products) => {
   for (const product of allProducts) {
     const image = product.image;
     const div = document.createElement("div");
-    const details = product.description;
-    console.log(details);
     div.classList.add("product");
     div.innerHTML = `<div class="single-product">
       <div>
